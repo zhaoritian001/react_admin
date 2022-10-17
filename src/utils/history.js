@@ -3,8 +3,8 @@
  * @Date: 2022/10/17
  */
 
-// import { createBrowserHistory } from 'history'
-//
-// const history = createBrowserHistory()
-//
-// export { history }
+import { createBrowserHistory } from 'history'
+
+const history = createBrowserHistory()
+
+export { history }

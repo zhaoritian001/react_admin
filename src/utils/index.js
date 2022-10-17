@@ -4,10 +4,11 @@
  */
 // 统一导入  再导出
 import { request} from "./request";
-import { setToken, getToken } from './token'
+import { setToken, getToken, removeToken } from './token'
 
 export {
     request,
     setToken,
-    getToken
+    getToken,
+    removeToken
 }

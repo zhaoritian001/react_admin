@@ -1,7 +1,11 @@
 import './App.css';
 import { BrowserRouter ,Routes, Route }  from "react-router-dom";
-import Layout from "./page/Layout";
+import GeekLayout from "./page/Layout";
 import Login from './page/Login';
+import { AuthComponent } from './cmps/AuthComponent'
+import Home from './page/Home';
+import Article from "./page/Article";
+import Publish from "./page/Publish";
 
 function App() {
   return (
@@ -9,7 +13,11 @@ function App() {
       <BrowserRouter>
           <Routes>
               {/*   Routes路由对应关系    */}
-              <Route path='/' element={<Layout />} />
+              <Route path='/' element={<AuthComponent><GeekLayout /></AuthComponent>} >
+                  <Route index element={<Home />} />
+                  <Route path='/article' element={<Article />} />
+                  <Route path='/publish' element={<Publish />} />
+              </Route>
               <Route path='/login' element={<Login />} />
           </Routes>
       </BrowserRouter>

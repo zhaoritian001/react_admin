@@ -5,17 +5,20 @@
 
 import { Button } from 'antd';
 import { useState } from 'react'
+import { AuthComponent } from "../../cmps/AuthComponent";
 
 const Layout = () => {
     const [size, setSize] = useState('large');
 
     return(
-        <div>
-            <Button type="primary" size={size}>
-                Download
-            </Button>
-            Layout
-        </div>
+        <AuthComponent>
+            <div>
+                <Button type="primary" size={size}>
+                    Download
+                </Button>
+                Layout
+            </div>
+        </AuthComponent>
     )
 }
 

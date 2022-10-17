@@ -1,0 +1,15 @@
+/*
+ * @Author: 赵东升
+ * @Date: 2022/10/17
+ */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  &-name {
+    color: red;
+  }
+}
